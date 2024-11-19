@@ -1,0 +1,114 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Services - Faceboss</title>
+<meta charset="UTF-8">
+    <link href="{% static 'img/fb.png' %}" rel="icon">
+  <link href="{% static 'img/fb.png' %}" rel="apple-touch-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("{% static 'img/ser.jpg' %}"); /* Relative path */
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Transforming Your Business</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-tag">Explore Our Expertise</span>
+  </div>
+</header>
+
+<!-- Page Content -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Services -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">OUR SERVICES</span></h5>
+    <p>At Faceboss, we provide cutting-edge technology solutions that help businesses thrive in a digital-first world. From innovative app development to robust data management, we deliver tailored services to meet your unique needs. Our expert team ensures exceptional quality and seamless implementation at every step.</p>
+    <p>Whether you’re a startup or an established enterprise, we bring the expertise and dedication required to elevate your business.</p>
+  </div>
+</div>
+
+<!-- Service Offerings -->
+<div class="w3-container" id="services">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHAT WE OFFER</span></h5>
+    
+    <div class="w3-card w3-padding w3-margin-bottom">
+      <h6>Software Development</h6>
+      <p>We design and develop scalable, robust, and efficient software solutions tailored to your business requirements.</p>
+    </div>
+
+    <div class="w3-card w3-padding w3-margin-bottom">
+      <h6>Mobile App Development</h6>
+      <p>Our mobile app solutions for Android, iOS, and cross-platform frameworks like Flutter provide seamless user experiences.</p>
+    </div>
+
+    <div class="w3-card w3-padding w3-margin-bottom">
+      <h6>Web Development</h6>
+      <p>We build dynamic, responsive, and visually appealing websites using the latest web technologies.</p>
+    </div>
+
+    <div class="w3-card w3-padding w3-margin-bottom">
+      <h6>Data Analytics and Management</h6>
+      <p>Unlock the power of your data with our advanced analytics and database management services for actionable insights.</p>
+    </div>
+
+    <div class="w3-card w3-padding w3-margin-bottom">
+      <h6>AI and Machine Learning</h6>
+      <p>Leverage AI-powered solutions for facial recognition, predictive analytics, and automation to stay ahead of the curve.</p>
+    </div>
+
+    <div class="w3-card w3-padding w3-margin-bottom">
+      <h6>Technical Support</h6>
+      <p>Our 24/7 technical support ensures your systems run smoothly and any issues are promptly resolved.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+<div class="w3-container" id="contact" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT US</span></h5>
+    <p>If you're interested in learning more about our services or want to partner with us, get in touch through the form below or email us at services@faceboss.com. Let’s work together to build your success story!</p>
+    <form action="mailto:bossettans3@gmail.com" method="post" enctype="text/plain">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Your Email" required name="Email"></p>
+      <p><textarea class="w3-input w3-padding-16 w3-border" placeholder="Message" required name="Message"></textarea></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">FaceBoss</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Careers at Faceboss</title>
+    <link href="{% static 'img/fb.png' %}" rel="icon">
+  <link href="{% static 'img/fb.png' %}" rel="apple-touch-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("{% static 'img/career.jpg' %}"); /* Relative path */
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Join our growing team</span>
+  </div>
+  <!-- <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Faceboss<br>Careers</span>
+  </div> -->
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-tag">Join us in shaping the future</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT FACEBOSS</span></h5>
+    <p>Faceboss is a cutting-edge software company focused on innovative solutions for digital identity management. We are revolutionizing how businesses connect with customers by leveraging AI, facial recognition, and advanced analytics. Our mission is to provide the most secure, user-friendly, and scalable software solutions for a wide range of industries.</p>
+    <p>We believe in pushing the boundaries of technology, and our software developers play a crucial role in bringing our vision to life. We're always on the lookout for talented individuals who are passionate about building impactful, world-class solutions.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"At Faceboss, we believe in continuous innovation and learning. Join us in transforming the world of digital identity."</i></p>
+      <p>CEO and Founder: Jane Doe</p>
+    </div>
+<!--    <img src="{% static '/w3images/team.jpg' %}" style="width:100%;max-width:1000px" class="w3-margin-top">-->
+  </div>
+</div>
+
+<!-- Opportunities Container -->
+<div class="w3-container" id="opportunities">
+    <div class="w3-content" style="max-width:700px">
+      <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">OPPORTUNITIES AT FACEBOSS</span></h5>
+      <p>At Faceboss, we offer dynamic career opportunities for skilled software developers who want to make an impact. Whether you're a front-end developer, back-end developer, or full-stack engineer, we have positions available for passionate tech enthusiasts who thrive in a collaborative and fast-paced environment.</p>
+      <h5>Current Openings</h5>
+      
+      <div class="w3-card w3-padding w3-margin-bottom">
+        <h6>Software Developer</h6>
+        <p>We are looking for skilled software developers who are passionate about building robust and scalable applications. Ideal candidates should have experience in modern programming languages and frameworks.</p>
+      </div>
+  
+      <div class="w3-card w3-padding w3-margin-bottom">
+        <h6>Web Developer</h6>
+        <p>As a web developer at Faceboss, you will work with cutting-edge technologies such as HTML, CSS, JavaScript, and popular web frameworks like React, Vue, or Angular. The ideal candidate will have a deep understanding of web design and responsive development.</p>
+      </div>
+      
+      <div class="w3-card w3-padding w3-margin-bottom">
+        <h6>Mobile App Developer</h6>
+        <p>We are seeking a mobile app developer with experience in Android, iOS, or cross-platform development using frameworks like Flutter or React Native. The ideal candidate will have a passion for creating seamless mobile experiences.</p>
+      </div>
+  
+      <div class="w3-card w3-padding w3-margin-bottom">
+        <h6>Software Tester</h6>
+        <p>Our software testers are responsible for ensuring our applications run smoothly and meet the highest quality standards. Experience with automated testing tools and a keen eye for detail is essential.</p>
+      </div>
+  
+      <div class="w3-card w3-padding w3-margin-bottom">
+        <h6>Database Administrator</h6>
+        <p>We need a skilled database administrator who can manage and optimize our databases. Experience with SQL, NoSQL, and cloud-based database management systems like AWS RDS or Azure SQL is required.</p>
+      </div>
+  
+      <div class="w3-card w3-padding w3-margin-bottom">
+        <h6>Technical Support</h6>
+        <p>As part of our technical support team, you will assist users with technical issues and ensure our systems are running smoothly. Ideal candidates should have excellent troubleshooting skills and a customer-first mentality.</p>
+      </div>
+  
+      <p>If you're passionate about working on innovative projects and growing your career in a supportive, team-oriented environment, we would love to hear from you!</p>
+    </div>
+  </div>
+  
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="contact" style="padding-bottom:32px;">
+    <div class="w3-content" style="max-width:700px">
+      <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT US</span></h5>
+      <p>Have questions about the available positions or want to get in touch? Reach out to us via the contact form below or by email at careers@faceboss.com. We look forward to hearing from you!</p>
+      <form action="mailto:bossettans3@gmail.com" method="post" enctype="text/plain">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Your Email" required name="Email"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Position You're Interested In" required name="Position"></p>
+        <p><textarea class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></textarea></p>
+        <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+      </form>
+    </div>
+  </div>
+  
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">FaceBoss</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
